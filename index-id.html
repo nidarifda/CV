@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>ProMan - Portofolio Pribadi</title>
+    <title>Personal Portfolio HTML Template</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -14,7 +14,7 @@
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet"> 
 
     <!-- Icon Font Stylesheet -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
@@ -36,88 +36,605 @@
     <!-- Spinner Start -->
     <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
         <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
-            <span class="sr-only">Memuat...</span>
+            <span class="sr-only">Loading...</span>
         </div>
     </div>
     <!-- Spinner End -->
 
+
     <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg bg-white navbar-light fixed-top shadow py-lg-0 px-4 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
-        <a href="index-id.html" class="navbar-brand d-block d-lg-none">
+<div class="navbar navbar-expand-lg bg-light navbar-light fixed-top shadow py-0 px-4 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
+    <div class="container-fluid">
+        <!-- Brand -->
+        <a href="index.html" class="navbar-brand">
             <h1 class="text-primary fw-bold m-0">Portofolio</h1>
         </a>
+
+        <!-- Toggle Button -->
         <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse justify-content-between py-4 py-lg-0" id="navbarCollapse">
-            <!-- Navigasi Kiri -->
-            <div class="navbar-nav ms-auto py-0">
-                <a href="#home" class="nav-item nav-link active">Beranda</a>
-                <a href="#about" class="nav-item nav-link">Tentang</a>
+
+        <!-- Navbar Links -->
+        <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+            <div class="navbar-nav ml-auto">
+                <a href="#home" class="nav-item nav-link active">Home</a>
+                <a href="#about" class="nav-item nav-link">Tentang Saya</a>
                 <a href="#skill" class="nav-item nav-link">Keahlian</a>
-            </div>
-
-            <!-- Logo Tengah -->
-            <a href="index-id.html" class="navbar-brand bg-custom-darkblue py-3 px-4 mx-3 d-none d-lg-block">
-                <h1 class="text-white fw-bold m-0">Portofolio</h1>
-            </a>
-
-            <!-- Navigasi Kanan -->
-            <div class="navbar-nav me-auto py-0">
-                <a href="#project" class="nav-item nav-link">Proyek</a>
+                <a href="#project" class="nav-item nav-link">Projek</a>
                 <a href="#certificate" class="nav-item nav-link">Sertifikat</a>
                 <a href="#contact" class="nav-item nav-link">Kontak</a>
-            </div>
 
-            <!-- Pemilih Bahasa -->
-            <div class="d-flex align-items-center ms-lg-3">
-                <a href="index.html" class="btn btn-sm btn-outline-primary me-2">English</a>
-                <a href="index-id.html" class="btn btn-sm btn-outline-secondary">Bahasa</a>
-            </div>
-        </div>
-    </nav>
-    <!-- Navbar End -->
-
-    <!-- Header Start -->
-    <div class="container-fluid bg-light my-0 mt-0" id="home">
-        <div class="container">
-            <div class="row g-5 align-items-center">
-                <div class="col-lg-6 py-6 pb-0 pt-lg-0">
-                    <h3 class="text-primary mb-3 text-white">Saya</h3>
-                    <h1 class="display-3 mb-3 text-white">Nida Rifda Chairuli</h1>
-                    <h2 class="typed-text-output d-inline text-white"></h2>
-                    <div class="typed-text d-none">Data Science, Analis Data, Pengembang Web</div>
-                    <div class="d-flex align-items-center pt-5">
-                        <a href="#" class="btn btn-info py-3 px-4 me-5 text-white">Unduh CV</a>
-                        <button type="button" class="btn-play" data-bs-toggle="modal" data-src="https://www.linkedin.com/in/nida-rifda-chairuli/" data-bs-target="#videoModal">
-                            <span></span>
-                        </button>
-                        <h5 class="ms-4 mb-0 d-none d-sm-block text-white">LinkedIn</h5>
+                <!-- Language Toggle Dropdown -->
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Bahasa</a>
+                    <div class="dropdown-menu dropdown-menu-end">
+                        <a href="index.html" class="dropdown-item">🇬🇧 English</a>
+                        <a href="index-id.html" class="dropdown-item">🇮🇩 Bahasa</a>
                     </div>
-                </div>
-                <div class="col-lg-6">
-                    <img class="img-fluid rounded-circle w-80" src="img/png2.jpg" alt="Foto Profil">
                 </div>
             </div>
         </div>
     </div>
-    <!-- Header End -->
+</div>
+<!-- Navbar End -->
 
-    <!-- Modal LinkedIn -->
-    <div class="modal modal-video fade" id="videoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content rounded-0">
-                <div class="modal-header">
-                    <h3 class="modal-title" id="exampleModalLabel">LinkedIn</h3>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Tutup"></button>
-                </div>
-                <div class="modal-body text-center">
-                    <p>Lihat profil LinkedIn saya di sini:</p>
-                    <a href="https://www.linkedin.com/in/nida-rifda-chairuli/" target="_blank" class="btn btn-primary">
-                        Kunjungi Profil LinkedIn
+
+
+   <!-- Header Start -->
+<div class="container-fluid bg-light my-0 mt-0" id="home">
+    <div class="container">
+        <div class="row g-5 align-items-center">
+            <!-- Left Column: Text and Buttons -->
+            <div class="col-lg-6 py-6 pb-0 pt-lg-0">
+                <h3 class="text-primary mb-3 text-white">I'm</h3>
+                <h1 class="display-3 mb-3 text-white">Nida Rifda Chairuli</h1>
+
+                <!-- Typing Effect -->
+                <h2 class="typed-text-output d-inline text-white"></h2>
+                <div class="typed-text d-none">Data Science, Data Analyst, Web Developer</div>
+
+                <!-- Buttons -->
+                <div class="d-flex flex-wrap align-items-center pt-4 gap-3">
+                    <!-- Download CV Button -->
+                    <a href="asset/Nida%20Rifda%20Chairuli_CV.pdf" download class="btn btn-info py-3 px-4 text-white">
+                        Unduh CV
+                    </a>
+
+                    <!-- LinkedIn Button (Same style as CV button) -->
+                    <a href="https://www.linkedin.com/in/nida-rifda-chairuli/" target="_blank" class="btn btn-info py-3 px-4 text-white">
+                        LinkedIn
                     </a>
                 </div>
             </div>
+
+            <!-- Right Column: Image -->
+            <div class="col-lg-6 text-center">
+                <img class="img-fluid rounded-circle w-75" src="img/png2.jpg" alt="Profile Picture">
+            </div>
         </div>
     </div>
-    <!-- Modal End -->
+</div>
+<!-- Header End -->
+
+
+
+<!-- About -->
+<div class="container-fluid bg-light my-5 py-5" id="about">
+    <div class="container">
+        <div class="row g-5 mb-5 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="col-lg-6">
+                <h1 class="display-5 mb-0">Tentang Saya</h1>
+            </div>
+            <div class="col-lg-6 text-lg-end">
+                <a class="btn btn-primary py-3 px-5" href="">Hire Me</a>
+            </div>
+        </div>
+        <div class="row g-4">
+            <div class="col-lg-12 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="bg-white rounded h-100 p-4 p-lg-5">
+                    <p class="mb-0" style="text-align: justify;">
+                    Saya adalah profesional yang berorientasi pada data dan sedang bertransisi ke bidang Big Data, Data Science, dan Advanced Analytics. Saya memiliki latar belakang yang kuat dalam operasional bisnis serta kepatuhan dalam aspek kepercayaan dan keamanan platform (trust & safety). Terampil dalam menangani dan menganalisis data berskala besar, mengidentifikasi pola, serta mengoptimalkan proses untuk meningkatkan performa bisnis. Saat ini saya sedang menempuh studi MSc di bidang Data Science and Business Analytics (spesialisasi Data Engineering) di Asia Pacific University dan mengikuti program sertifikasi Full-Stack Data Analytics melalui RevoU. Saya mahir menggunakan Python, SQL, Power BI, Tableau, serta teknik machine learning, dengan pengalaman praktis dalam pembersihan data, eksplorasi data (EDA), A/B testing, dan pemodelan prediktif. Saya antusias dalam menyelesaikan permasalahan bisnis melalui pendekatan berbasis data dan berkomitmen untuk berkembang ke peran yang berdampak di bidang Data Science, Analytics, atau Data Engineering.                </p>               
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End About -->
+
+
+    <!-- Expertise Start -->
+    <div class="container-xxl py-6 pb-3" id="skill">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <h1 class="display-5 mb-3">Keahlian dan Pengalaman</h1>
+                    <p class="mb-4">Antusias terhadap data, mengubah data menjadi insight yang relevan dan dapat ditindaklanjuti, termotivasi untuk mendorong kesuksesan bisnis dan individu.</p>
+                    <h3 class="mb-4">Keahlian</h3>
+                    <div class="row align-items-center">
+                        <div class="col-md-6">
+                            <div class="skill mb-4">
+                                <div class="d-flex justify-content-between">
+                                    <h6 class="font-weight-bold">Python</h6>
+                                    <h6 class="font-weight-bold">95%</h6>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                            <div class="skill mb-4">
+                                <div class="d-flex justify-content-between">
+                                    <h6 class="font-weight-bold">SAS</h6>
+                                    <h6 class="font-weight-bold">90%</h6>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                            <div class="skill mb-4">
+                                <div class="d-flex justify-content-between">
+                                    <h6 class="font-weight-bold">R Programming</h6>
+                                    <h6 class="font-weight-bold">90%</h6>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+			    </div>
+			    <div class="skill mb-4">
+                                <div class="d-flex justify-content-between">
+                                    <h6 class="font-weight-bold">AWS Services</h6>
+                                    <h6 class="font-weight-bold">87%</h6>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="87" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="skill mb-4">
+                                <div class="d-flex justify-content-between">
+                                    <h6 class="font-weight-bold">SQL</h6>
+                                    <h6 class="font-weight-bold">93%</h6>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="93" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                            <div class="skill mb-4">
+                                <div class="d-flex justify-content-between">
+                                    <h6 class="font-weight-bold">Machine Learning</h6>
+                                    <h6 class="font-weight-bold">90%</h6>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar bg-dark" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                            <div class="skill mb-4">
+                                <div class="d-flex justify-content-between">
+                                    <h6 class="font-weight-bold">Deep Learning</h6>
+                                    <h6 class="font-weight-bold">85%</h6>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar bg-info" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+				</div>
+				<div class="skill mb-4">
+                                <div class="d-flex justify-content-between">
+                                    <h6 class="font-weight-bold">Microsoft Azure</h6>
+                                    <h6 class="font-weight-bold">85%</h6>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar bg-info" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+				</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+<ul class="nav nav-pills rounded border border-2 border-primary mb-5">
+    <li class="nav-item w-50">
+        <button class="nav-link w-100 py-3 fs-5 active" data-bs-toggle="pill" data-bs-target="#experience-tab">Experience</button>
+    </li>
+    <li class="nav-item w-50">
+        <button class="nav-link w-100 py-3 fs-5" data-bs-toggle="pill" data-bs-target="#education-tab">Education</button>
+    </li>
+</ul>
+                                    <div class="tab-content">
+    <!-- Experience Tab Content -->
+    <div id="experience-tab" class="tab-pane fade show active">
+        <div class="row gy-5 gx-4">
+            <!-- Experience Items -->
+            <div class="col-sm-6">
+                <h5>Data Analyst Associate</h5>
+                <hr class="text-primary my-2">
+                <p class="text-primary mb-1">September 2024 - January 2025</p>
+                <h6 class="mb-0">RevoU x Telekom (Virtual Internship, Freelance)</h6>
+            </div>
+            <div class="col-sm-6">
+                <h5>Business Operation Associate - Trust & Safety</h5>
+                <hr class="text-primary my-2">
+                <p class="text-primary mb-1">May 2019 - April 2023</p>
+                <h6 class="mb-0">Accenture</h6>
+            </div>
+            <div class="col-sm-6">
+                <h5>Junior Intern Accountant</h5>
+                <hr class="text-primary my-2">
+                <p class="text-primary mb-1">March 2018 - May 2018</p>
+                <h6 class="mb-0">Yes Accountants</h6>
+            </div>
+        </div>
+    </div>
+
+    <!-- Education Tab Content -->
+    <div id="education-tab" class="tab-pane fade">
+        <div class="row gy-5 gx-4">
+            <!-- Education Items -->
+	    <div class="col-sm-6">
+                <h5>MSc in Data Science and Business Analytics</h5>
+                <hr class="text-primary my-2">
+                <p class="text-primary mb-1">May 2024 - Present</p>
+                <h6 class="mb-0">Asia Pacific University</h6>
+            </div>
+	    <div class="col-sm-6">
+                <h5>Full-Stack Data Analyst</h5>
+                <hr class="text-primary my-2">
+                <p class="text-primary mb-1">May 2024 - Jan 2025</p>
+                <h6 class="mb-0">RevoU</h6>
+            </div>
+            <div class="col-sm-6">
+                <h5>Bachelor in Business Administration (Hons)</h5>
+                <hr class="text-primary my-2">
+                <p class="text-primary mb-1">Sep 2015 - jun 2018</p>
+                <h6 class="mb-0">Infrastructure University of Kuala Lumpur</h6>                               
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Expertise End -->
+
+
+   
+    <!-- Projects Start -->
+    <div class="container-xxl py-6 pt-5" id="project">
+        <div class="container">
+            <div class="row g-5 mb-5 align-items-center wow fadeInUp" data-wow-delay="0.1s">
+                <div class="col-lg-6">
+                    <h1 class="display-5 mb-0">Project Saya</h1>
+                </div>
+                <div class="col-lg-6 text-lg-end">
+                    <ul class="list-inline mx-n3 mb-0" id="portfolio-flters">
+                        <li class="mx-3 active" data-filter="*">Semua Prijek</li>
+                        <li class="mx-2" data-filter=".first">Data Analysis</li>
+                        <li class="mx-2" data-filter=".second">Deep Learning</li>
+			<li class="mx-2" data-filter=".third">Machine Learning</li>
+			<li class="mx-2" data-filter=".fourth">NLP</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row g-4 portfolio-container wow fadeInUp" data-wow-delay="0.1s">
+                <div class="col-lg-4 col-md-6 portfolio-item first">
+                    <div class="portfolio-img rounded overflow-hidden">
+                        <img class="img-fluid" src="img/Project-6.jpeg" alt="">
+                        <div class="portfolio-btn">
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="https://www.canva.com/design/DAGmuhNyHCM/_02FRxnISiutrULoRN8VEw/view" target="_blank" rel="noopener noreferrer"><i class="fa fa-eye"></i></a>
+				<a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="https://colab.research.google.com/drive/1jf7Mr2Iw38eez1nf5IyphZl4i7GsELv7?usp=sharing" target="_blank" rel="noopener noreferrer"><i class="fa fa-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+              <div class="col-lg-4 col-md-6 portfolio-item first">
+    <div class="portfolio-img rounded overflow-hidden">
+        <img class="img-fluid" src="img/project-3.png" alt="">
+        <div class="portfolio-btn">
+            		   <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="https://www.canva.com/design/DAGk5ev0_s4/WKV9N46mtopKRV_TEQtoGQ/view" target="_blank" rel="noopener noreferrer"> <i class="fa fa-eye"></i></a>
+            		   <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="https://colab.research.google.com/drive/1xiaGu6wE7trAhhBuEXdUhtDfyfG8AiV9?usp=sharing" target="_blank" rel="noopener noreferrer"><i class="fa fa-link"></i></a>
+        		</div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 portfolio-item first">
+                    <div class="portfolio-img rounded overflow-hidden">
+                        <img class="img-fluid" src="img/project-4.jpeg" alt="">
+                        <div class="portfolio-btn">
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="https://www.canva.com/design/DAGX2yryIkA/tT0djuMe2vUhaQ3fYyWcSg/view" target="_blank" rel="noopener noreferrer"><i class="fa fa-eye"></i></a>
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="https://colab.research.google.com/drive/1LOn8Z7L-r2NAXQ2MJmxbfOtAVrWIXuK0?usp=sharing" target="_blank" rel="noopener noreferrer"><i class="fa fa-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 portfolio-item fourth">
+                    <div class="portfolio-img rounded overflow-hidden">
+                        <img class="img-fluid" src="img/project-5.jpeg" alt="">
+                        <div class="portfolio-btn">
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="https://www.canva.com/design/DAGmuRolqH8/S4dT2sgQS9bPwh2eO1W4Sg/view" target="_blank" rel="noopener noreferrer"><i class="fa fa-eye"></i></a>
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="https://github.com/nidarifda/NLP_News-Headline.git" target="_blank" rel="noopener noreferrer"><i class="fa fa-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+		    <div class="col-lg-4 col-md-6 portfolio-item fourth">
+                    <div class="portfolio-img rounded overflow-hidden">
+                        <img class="img-fluid" src="img/project-7.png" alt="">
+                        <div class="portfolio-btn">
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="https://www.canva.com/design/DAGnbB8tO-M/b47E3_F9TQHYmbY_QM8_Uw/view" target="_blank" rel="noopener noreferrer"><i class="fa fa-eye"></i></a>
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="https://github.com/nidarifda/fake-news-detector.git" target="_blank" rel="noopener noreferrer"><i class="fa fa-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+		    <div class="col-lg-4 col-md-6 portfolio-item second">
+                    <div class="portfolio-img rounded overflow-hidden">
+                        <img class="img-fluid" src="img/project-8.png" alt="">
+                        <div class="portfolio-btn">
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/project-8.png" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="t" target="_blank" rel="noopener noreferrer"><i class="fa fa-link"></i></a>
+                        </div>
+		     </div>
+                </div>
+		    <div class="col-lg-4 col-md-6 portfolio-item third">
+                    <div class="portfolio-img rounded overflow-hidden">
+                        <img class="img-fluid" src="img/project-8.png" alt="">
+                        <div class="portfolio-btn">
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/project-8.png" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="t" target="_blank" rel="noopener noreferrer"><i class="fa fa-link"></i></a>
+                        </div>
+		     </div>
+                </div>
+	 </div>
+    <!-- Projects End -->
+
+
+    <!-- Team Start -->
+    <div class="container-xxl py-6 pb-5" id="certificate">
+        <div class="container">
+            <div class="row g-5 mb-5 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="col-lg-6">
+                    <h1 class="display-5 mb-0">Sertifikat</h1>
+                </div>
+                            </div>
+            <div class="row g-4">
+    <!-- First Certificate -->
+    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+        <!-- Start link wrapper -->
+        <a href="https://drive.google.com/file/d/13CBd92_w4vwGiE9nDx0JGhwNxBleHuHD/view?usp=sharing" target="_blank" style="text-decoration: none; color: inherit;">
+            <div class="team-item position-relative">
+                <img class="img-fluid rounded" src="img/cert-1.png" alt="">
+                <div class="team-text bg-white rounded-end p-4">
+                    <div>
+                        <h5>Full Stack Data Analytics</h5>
+                        <span>RevoU</span>
+                    </div>
+                    <i class="fa fa-arrow-right fa-2x text-primary"></i>
+                </div>
+            </div>
+        </a>
+        <!-- End link wrapper -->
+    </div>
+
+    <!-- Second Certificate -->
+    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+        <!-- Start link wrapper -->
+        <a href="https://coursera.org/share/6f46fc9a72f226690fc5feb6b54b3ee2" target="_blank" style="text-decoration: none; color: inherit;">
+            <div class="team-item position-relative">
+                <img class="img-fluid rounded" src="img/cert-2.png" alt="">
+                <div class="team-text bg-white rounded-end p-4">
+                    <div>
+                        <h5>Process Data from Dirty to Clean</h5>
+                        <span>Google</span>
+                    </div>
+                    <i class="fa fa-arrow-right fa-2x text-primary"></i>
+                </div>
+            </div>
+        </a>
+        <!-- End link wrapper -->
+    </div>
+<!-- Third Certificate -->
+    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+        <!-- Start link wrapper -->
+        <a href="https://coursera.org/share/b1e0f512bace10b4163d3a26ca65c9cd" target="_blank" style="text-decoration: none; color: inherit;">
+            <div class="team-item position-relative">
+                <img class="img-fluid rounded" src="img/Cert-3.png" alt="">
+                <div class="team-text bg-white rounded-end p-4">
+                    <div>
+                        <h5>Prepare Data for Exploration</h5>
+                        <span>Google</span>
+                    </div>
+                    <i class="fa fa-arrow-right fa-2x text-primary"></i>
+                </div>
+            </div>
+        </a>
+        <!-- End link wrapper -->
+</div>
+<!-- Fourth Certificate -->
+    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+        <!-- Start link wrapper -->
+        <a href="https://coursera.org/share/a359799d79cbf8292a17c961bf637c8e" target="_blank" style="text-decoration: none; color: inherit;">
+            <div class="team-item position-relative">
+                <img class="img-fluid rounded" src="img/cert-4.png" alt="">
+                <div class="team-text bg-white rounded-end p-4">
+                    <div>
+                        <h5>Analyze Data to Answer Questions</h5>
+                        <span>Google</span>
+                    </div>
+                    <i class="fa fa-arrow-right fa-2x text-primary"></i>
+                </div>
+            </div>
+        </a>
+        <!-- End link wrapper -->
+		    </div>
+<!-- Fifth Certificate -->
+    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+        <!-- Start link wrapper -->
+        <a href="https://coursera.org/share/73c4bd07b42adf4f9000110b452825ea" target="_blank" style="text-decoration: none; color: inherit;">
+            <div class="team-item position-relative">
+                <img class="img-fluid rounded" src="img/cert-5.png" alt="">
+                <div class="team-text bg-white rounded-end p-4">
+                    <div>
+                        <h5>Data Analysis with R Programming</h5>
+                        <span>Google</span>
+                    </div>
+                    <i class="fa fa-arrow-right fa-2x text-primary"></i>
+                </div>
+            </div>
+        </a>
+        <!-- End link wrapper -->
+		    </div>
+<!-- Fifth Certificate -->
+    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+        <!-- Start link wrapper -->
+        <a href="https://coursera.org/share/6aa5147417f58648755f0ef157c0b1ca" target="_blank" style="text-decoration: none; color: inherit;">
+            <div class="team-item position-relative">
+                <img class="img-fluid rounded" src="img/cert-6.png" alt="">
+                <div class="team-text bg-white rounded-end p-4">
+                    <div>
+                        <h5>Share Data Through the Art of Visualization</h5>
+                        <span>Google</span>
+                    </div>
+                    <i class="fa fa-arrow-right fa-2x text-primary"></i>
+                </div>
+            </div>
+        </a>
+        <!-- End link wrapper -->
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Team End -->
+
+    <!-- Contact Start -->
+    <div class="container-xxl pb-5" id="contact">
+        <div class="container py-5">
+            <div class="row g-5 mb-5 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="col-lg-6">
+                    <h1 class="display-5 mb-0">Mari Berkerja Sama!</h1>
+                </div>
+                <div class="col-lg-6 text-lg-end">
+                    <a class="btn btn-primary py-3 px-5" href="">Kontak Saya</a>
+                </div>
+            </div>
+            <div class="row g-5">
+                <div class="col-lg-5 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <p class="mb-2">Lokasi:</p>
+                    <h3 class="fw-bold">Cyberjaya, 63000, Selangor, Malaysia</h3>
+                    <hr class="w-100">
+                    <p class="mb-2">Telpon:</p>
+                    <h3 class="fw-bold">+601118993649</h3>
+                    <hr class="w-100">
+                    <p class="mb-2">Email:</p>
+                    <h3 class="fw-bold">nidarifda14@gmail.com</h3>
+                    <hr class="w-100">
+                    <p class="mb-2">Ikuti Saya:</p>
+                    <div class="d-flex pt-2">
+    <a class="btn btn-square btn-primary me-2" href="https://www.facebook.com/Nidarifda14/" target="_blank">
+        <i class="fab fa-facebook-f"></i>
+    </a>
+    <a class="btn btn-square btn-primary me-2" href="https://github.com/nidarifda" target="_blank">
+        <i class="fab fa-github"></i>
+    </a>
+    <a class="btn btn-square btn-primary me-2" href="https://www.linkedin.com/in/nida-rifda-chairuli/" target="_blank">
+        <i class="fab fa-linkedin-in"></i>
+    </a>
+</div>
+                </div>
+                <div class="col-lg-7 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+ 		<p class="mb-4 fw-bold fs-5">Saya selalu terbuka untuk kolaborasi, masukan, atau sekadar menyapa.Yuk, terhubung dan berdiskusi!
+                </p>
+                   <form action="https://formsubmit.co/nidarifda14@gmail.com" method="POST">
+        <!-- Optional: disable CAPTCHA -->
+        <input type="hidden" name="_captcha" value="false">
+        
+        <!-- Optional: redirect after submission -->
+        <input type="hidden" name="_next" value="https://yourdomain.com/thank-you.html">
+
+        <div class="row g-3">
+            <div class="col-md-6">
+                <div class="form-floating">
+                    <input type="text" class="form-control" id="name" name="name" placeholder="Your Name" required>
+                    <label for="name">Nama</label>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-floating">
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Your Email" required>
+                    <label for="email">Email</label>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="form-floating">
+                    <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject" required>
+                    <label for="subject">Subjek</label>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="form-floating">
+                    <textarea class="form-control" placeholder="Leave a message here" id="message" name="message" style="height: 150px;" required></textarea>
+                    <label for="message">Pesan Singkat</label>
+                </div>
+            </div>
+            <div class="col-12">
+                <button class="btn btn-primary w-100 py-3" type="submit">Kirim Pesan</button>
+            </div>
+        </div>
+    </form>
+</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Contact End -->
+
+
+    <!-- Map Start -->
+    <div class="container-xxl pt-3 px-0 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container-xxl pt-3 px-0">
+            <div class="bg-dark">
+                <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3984.630305836806!2d101.65814737359625!3d2.9221918970541725!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cdb6561f573ac9%3A0x5c59772bfbd1d00a!2sShaftsbury%20Stellar%20Cyberjaya%20Hotel%20(previously%20Shaftsbury%20Serviced%20Residences)!5e0!3m2!1sen!2smy!4v1744251533361!5m2!1sen!2smy"
+                frameborder="0" style="width: 100%; height: 450px; border:0;" allowfullscreen="" aria-hidden="false"
+                tabindex="0"></iframe>
+            </div>
+        </div>
+    </div>
+    <!-- Map End -->
+
+
+    <!-- Copyright Start -->
+    <div class="container-fluid bg-dark text-white py-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        &copy; <a class="border-bottom text-secondary" href="#">nidarifdaportofolio.com</a>, All Right Reserved.
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Copyright End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.mi.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/typed/typed.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
