@@ -260,6 +260,7 @@
 #portfolio-flters li {
     display: inline-block;
     font-weight: 500;
+    font-size: 0.85rem;
     color: var(--dark);
     cursor: pointer;
     transition: .5s;
